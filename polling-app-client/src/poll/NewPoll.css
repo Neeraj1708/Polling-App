@@ -1,0 +1,161 @@
+/* Container styles */
+.new-poll-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2.5rem 3rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.page-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #2563eb; /* blue-600 */
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* Form spacing */
+.create-poll-form .poll-form-row {
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+
+/* TextArea styles */
+.create-poll-form textarea {
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 1.5px solid #cbd5e1;
+  transition: all 0.3s ease;
+  resize: vertical;
+  min-height: 96px; /* ~4 rows */
+}
+
+.create-poll-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
+}
+
+/* Input styles */
+.create-poll-form input[type="text"] {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.create-poll-form input[type="text"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
+}
+
+/* Error messages */
+.ant-form-item-has-error .ant-form-item-explain {
+  color: #dc2626; /* red-600 */
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Add choice button */
+.create-poll-form button[type="button"] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #2563eb;
+  border: 2px dashed #2563eb;
+  background: transparent;
+  padding: 0.75rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-poll-form button[type="button"]:hover:not(:disabled) {
+  background-color: #0d67dd; /* blue-100 */
+}
+
+/* Create poll button */
+.create-poll-form button[type="submit"] {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 0.85rem 0;
+  color: #fff;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2563eb, #4f46e5);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.6);
+  transition: background 0.3s ease;
+}
+
+.create-poll-form button[type="submit"]:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.create-poll-form button[type="submit"]:hover:not(:disabled) {
+  background: linear-gradient(90deg, #1d4ed8, #4338ca);
+}
+
+/* Close (remove choice) icon */
+.dynamic-delete-button {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ef4444; /* red-500 */
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.dynamic-delete-button:hover {
+  color: #b91c1c; /* red-700 */
+}
+
+/* Optional choice inputs have lighter text */
+.optional-choice {
+  color: #6b7280; /* gray-500 */
+}
+
+/* Poll length container */
+.poll-form-row > div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.poll-form-row label {
+  font-weight: 600;
+  min-width: 90px;
+  color: #374151; /* gray-700 */
+}
+
+.ant-select {
+  width: 4.5rem !important;
+}
+
+/* Character counter text */
+.char-counter {
+  font-size: 0.75rem;
+  color: #9ca3af; /* gray-400 */
+  text-align: right;
+  margin-top: 0.25rem;
+  font-family: monospace;
+}
